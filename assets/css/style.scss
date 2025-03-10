@@ -1,0 +1,46 @@
+---
+---
+
+@import 'variables.scss';
+@import 'header.scss';
+
+@font-face {
+    font-family: "FunnelSans";
+    src: url("/assets/font/FunnelSans/FunnelSans.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TheSeasons";
+    src: url("/assets/font/TheSeasons-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "funnel-sans";
+    line-height: 1.5;
+    //padding-top: 100px;
+    background-color: $color-background;
+    color: $color-text-primary;
+}
+
+html {
+    overflow-x: hidden; // Stop overflow scrolling on mobile
+}
+
+// h1, h2, h3, h4, h5, h6 {
+//     margin: 10px;
+// }
