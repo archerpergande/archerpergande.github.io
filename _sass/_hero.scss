@@ -2,7 +2,7 @@
 
 .hero {
     display: flex;
-    justify-items: center;
+    //justify-items: center;
     align-items: center;
     flex-direction: row;
 
@@ -15,13 +15,13 @@
 .hero-image-container {
     height: 100%;
     width: 100%;
+    padding: $header-height;
     overflow: hidden;
 }
 
 // probably need wrapper for this to work on mobile
 .hero-image {
     object-fit: cover;
-    padding: $header-height;
     width: 100%;
     height: 100%;
 
