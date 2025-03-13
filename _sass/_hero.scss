@@ -10,7 +10,7 @@
     height: calc(100svh - #{$header-height});
 
     background-color: $color-background;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .hero-image {
