@@ -12,6 +12,7 @@
     background-color: $color-background;
 }
 
+// Necessary for rendering on mobile devices
 .hero-image-container {
     height: 100%;
     width: 100%;
@@ -19,7 +20,6 @@
     overflow: hidden;
 }
 
-// probably need wrapper for this to work on mobile
 .hero-image {
     object-fit: cover;
     width: 100%;
@@ -70,11 +70,11 @@
 
 @media (max-width: 1150px) {
     .hero {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .hero-image-container {
-        padding: 0px;
+        padding: 0px !important;
     }
 
     .hero-image {
