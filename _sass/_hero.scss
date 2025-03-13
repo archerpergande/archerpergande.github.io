@@ -12,8 +12,7 @@
     background-color: $color-background;
 }
 
-// Necessary for rendering on mobile devices
-// padding does not work for mobile
+// Necessary container for rendering on mobile devices
 .hero-image-container {
     height: 100%;
     width: 100%;
@@ -45,7 +44,7 @@
     
     h1 {
         font-family: $font-accent;
-        font-size: 3.5rem;
+        font-size: calc(1rem + 3vw);
         margin: 0px;
     }
 
@@ -84,7 +83,7 @@
 }
 
 @media (max-width: 1150px) and (max-height: 600px) {
-    .hero-image {
+    .hero-image-container {
         display: none;
     }
 
