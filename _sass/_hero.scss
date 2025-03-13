@@ -1,18 +1,15 @@
 @import 'variables.scss';
 
 .hero {
-    width: 100%;
-    height: calc(100svh - #{$header-height});
-    background-color: $color-background;
-}
-
-.hero-container {
     display: flex;
     justify-items: center;
     align-items: center;
     flex-direction: row;
+
     width: 100%;
-    height: 100%;
+    height: calc(100svh - #{$header-height});
+
+    background-color: $color-background;
 }
 
 .hero-image {
