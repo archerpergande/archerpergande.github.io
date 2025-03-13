@@ -12,6 +12,13 @@
     background-color: $color-background;
 }
 
+.hero-image-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+// probably need wrapper for this to work on mobile
 .hero-image {
     object-fit: cover;
     padding: $header-height;
