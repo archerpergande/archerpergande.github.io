@@ -16,7 +16,7 @@
 .hero-image-container {
     height: 100%;
     width: 100%;
-    padding: $header-height;
+    //padding: $header-height;
     overflow: hidden;
 }
 
@@ -70,11 +70,11 @@
 
 @media (max-width: 1150px) {
     .hero {
-        flex-direction: column !important;
+        flex-direction: column;
     }
 
     .hero-image-container {
-        padding: 0px !important;
+        padding: 0px;
     }
 
     .hero-image {
