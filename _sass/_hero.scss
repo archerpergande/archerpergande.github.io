@@ -13,10 +13,11 @@
 }
 
 // Necessary for rendering on mobile devices
+// padding does not work for mobile
 .hero-image-container {
     height: 100%;
     width: 100%;
-    //padding: $header-height;
+    padding: $header-height;
     overflow: hidden;
 }
 
