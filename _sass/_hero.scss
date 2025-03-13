@@ -2,7 +2,6 @@
 
 .hero {
     display: flex;
-    //justify-items: center;
     align-items: center;
     flex-direction: row;
 
@@ -38,19 +37,23 @@
     width: 100%;
 }
 
+/*
+1rem ensures that the text is at least 1rem big 
+*/
 .hero-text {
     margin: 10px;
     text-align: center;
     
     h1 {
         font-family: $font-accent;
-        font-size: calc(1rem + 3vw);
+        font-size: calc(2rem + 2vw);
         margin: 0px;
+        line-height: 1.2;
     }
 
     p {
         font-family: $font-primary;
-        font-size: 1.2rem;
+        font-size: calc(1rem + 0.25vw);
     }
 }
 
@@ -58,7 +61,6 @@
     display: inline-block;
     border: none;
     padding: 0.60rem 3.5rem;
-    right: $header-height;
     background-color: $color-button;
     color: $color-text-primary;
     font-weight: 600;
