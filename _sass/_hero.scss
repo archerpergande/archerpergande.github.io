@@ -39,45 +39,6 @@
     height: 100%;
 }
 
-.hero-caption-title {
-    text-align: center;
-    width: 100%;
-    margin: 2rem;
-
-    h1 {
-        font-family: $font-accent;
-        //font-size: calc(2rem + 2vw);
-        font-size: calc(2rem + 1vw);
-        margin: 0px;
-        //line-height: 1.5;
-    }
-
-    p {
-        font-family: $font-primary;
-        font-size: large;
-        //font-size: 1.5rem;
-    }
-}
-
-.hero-caption-about {
-    text-align: center;
-    width: 90%;
-
-    h1 {
-        font-family: $font-accent;
-        //font-size: calc(2rem + 2vw);
-        font-size: calc(2rem + 1vw);
-        margin: 0px;
-        //line-height: 1.5;
-    }
-
-    p {
-        font-family: $font-primary;
-        font-size: large;
-        //font-size: 1.5rem;
-    }
-}
-
 /*
 1rem ensures that the text is at least 1rem big
 */
@@ -85,6 +46,7 @@
     margin: 15px;
     text-align: center;
     width: 100%;
+    gap: 1rem;
     
     h1 {
         font-family: $font-accent;
@@ -102,7 +64,6 @@
 }
 
 .hero-button {
-    margin: 10px;
     display: inline-block;
     border: none;
     padding: 0.60rem 3.5rem;
