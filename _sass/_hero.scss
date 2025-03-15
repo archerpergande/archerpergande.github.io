@@ -50,14 +50,16 @@
     
     h1 {
         font-family: $font-accent;
-        font-size: calc(2rem + 2vw);
+        //font-size: calc(2rem + 2vw);
+        font-size: calc(2rem + 1vw);
         margin: 0px;
-        //line-height: 1.2;
+        //line-height: 1.5;
     }
 
     p {
         font-family: $font-primary;
         font-size: large;
+        //font-size: 1.5rem;
     }
 }
 
