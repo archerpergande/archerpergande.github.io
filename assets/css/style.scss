@@ -27,6 +27,7 @@
 
 html, body {
     width: 100%;
+    overflow-x: hidden; // Stop overflow scrolling on mobile
     //height: 100%;
 }
 
@@ -43,7 +44,7 @@ body {
 }
 
 html {
-    overflow-x: hidden; // Stop overflow scrolling on mobile
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
