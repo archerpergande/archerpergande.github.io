@@ -31,33 +31,38 @@
 
 .hero-caption {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     //gap: 5px;
     padding: $header-height;
     width: 100%;
+    height: 100%;
 }
 
 /*
-1rem ensures that the text is at least 1rem big 
+1rem ensures that the text is at least 1rem big
 */
 .hero-text {
     margin: 10px;
     text-align: center;
+    width: 100%;
     
     h1 {
         font-family: $font-accent;
         font-size: calc(2rem + 2vw);
         margin: 0px;
-        line-height: 1.2;
+        //line-height: 1.2;
     }
 
     p {
         font-family: $font-primary;
-        font-size: calc(1rem + 0.25vw);
+        font-size: large;
     }
 }
 
 .hero-button {
+    margin: 10px;
     display: inline-block;
     border: none;
     padding: 0.60rem 3.5rem;
