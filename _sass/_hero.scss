@@ -65,6 +65,10 @@
 
 .hero-button {
     display: inline-block;
+    position: absolute;
+    top: $header-height;
+    right: 0;
+    margin: $header-height;
     border: none;
     padding: 0.60rem 3.5rem;
     background-color: $color-button;
