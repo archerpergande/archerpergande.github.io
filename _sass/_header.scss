@@ -6,6 +6,7 @@ header {
     top: 0;
     height: $header-height;
     background-color: $color-accent;
+    z-index: 1000;
 
     display: flex;
     align-items: center;

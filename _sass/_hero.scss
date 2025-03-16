@@ -71,7 +71,6 @@
     background-color: $color-button;
     color: $color-text-primary;
     font-weight: 600;
-    //box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 
     &:hover {
         background-color: $color-highlight;
@@ -89,6 +88,10 @@
 
     .hero-image {
         border-radius: 0% !important;
+    }
+
+    .hero-button {
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
     }
 }
 
