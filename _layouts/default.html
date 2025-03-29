@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script src="https://kit.fontawesome.com/884c20470a.js" crossorigin="anonymous"></script>
     <title>{{ page.title }}</title>
 </head>
 
@@ -13,14 +14,180 @@
     {% include header.html %}
     {% include hero.html %}
 
-    <section>
-
-        <div class="section-title">
-            <img src="/assets/img/paw-white.png" height="65px", width="65px">
-            <h1>Education</h1>
+    <section class="content dark" id="Education">
+        <div class="flexbox column text-compact">
+            <div class="flexbox row">
+                <img src="/assets/img/paw-white.png" width="35">
+                <h1>Education</h1>
+            </div>
+            <p>Clemson University, SC</p>
         </div>
-    
+        <hr>
+
+        <div class="flexbox">
+            <div>
+                <p>
+                    One of the most prestigious colleges in 
+                    South Carolina, Clemson University is known 
+                    for its academic excellence and strong community.
+                </p>
+            </div>
+
+        </div>
+
     </section>
+
+    <section class="content" id="Clubs">
+        <div class="flexbox column">
+            <div class="flexbox row text-compact">
+                <h1>Clubs</h1>
+                <i class="i1 fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <p class="text-compact">and Organizations</p>
+        </div>
+
+        <hr>
+
+        <div class="grid">
+            <div class="card">
+                <h2>ACM</h2>
+                <p>
+                    The Association of Computing and Machinery
+                    aims to support those interested in computers
+                    by providing opportunity for learning, career
+                    development, and professional networking.
+                </p>
+                <div class="flexbox space-between">
+                    <p class="text-important">Networking</p>
+                    <p class="text-important">Learning</p>
+                    <p class="text-important">Community</p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>CUhackit</h2>
+                <p>
+                    A yearly event held at Clemson where students 
+                    team together to design and build new ideas and 
+                    inventions using computers. Events are held in 
+                    partnership with industry leaders such as AWS, 
+                    Nvidia, and more.
+                </p>
+                <div class="flexbox space-between">
+                    <p class="text-important">Teamwork</p>
+                    <p class="text-important">Creativity</p>
+                    <p class="text-important">Workshop</p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>AI Club</h2>
+                <p>
+                    Offers instruction about the fundamentals and 
+                    latest trends of AI and machine learning 
+                    algorithms
+                </p>
+                <div class="flexbox space-between">
+                    <p class="text-important">Technology</p>
+                    <p class="text-important">Innovation</p>
+                    <p class="text-important">Future</p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>UEFI Forum</h2>
+                <p>
+                    Organization tasked with the development of 
+                    computer firmware. Instructional webinars are 
+                    hosted by Intel, AMD, Microsoft, and others.
+                </p>
+                <div class="flexbox space-between">
+                    <p class="text-important">Industry</p>
+                    <p class="text-important">Embedded</p>
+                    <p class="text-important">Career</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <p>and Organizations</p>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p>Paragraph</p>
+
+
+    <section class="club-grid dark">
+        <div>
+            <h2>Clemson ACM Student Chapter</h2>
+            <p>Organization aimed to support those interested in computers 
+                by providing opportunity for learning, career development, 
+                and professional networking.</p>
+        </div>
+        <p>one</p>
+        <p>two</p>
+        <p>three</p>
+        <div class="club-item">
+            <div class="club-title">
+                <p class="club-name">Clemson ACM Student Chapter:</p>
+                <p class="club-time">January 2025 - Present</p>
+            </div>
+            <p class="tester">
+                Organization aimed to support those interested in computers 
+                by providing opportunity for learning, career development, 
+                and professional networking.
+            </p>
+        </div>
+    </section>
+
+    <div class="content">
+        <section>
+    
+        
+
+        <div class="club-item">
+            <div class="club-title">
+                <p class="club-name">Arificial Intelligence Club:</p>
+                <p class="club-time">February 2025 - Present</p>
+            </div>
+            <p class="tester">
+                Teaches about the latest trends in AI development and 
+                and provides training for various AI driven technologies.
+            </p>
+        </div>
+
+        <div class="club-item">
+            <div class="club-title">
+                <p class="club-name">Cuhackit:</p>
+                <p class="club-time">March 2025</p>
+            </div>
+            <p class="tester">
+                Yearly event at Clemson where students team together and 
+                build projects that solve real world problems.
+            </p>
+        </div>
+
+        <div class="club-item">
+            <div class="club-title">
+                <p class="club-name">UEFI Forum:</p>
+                <p class="club-time">July 2024 - Present</p>
+            </div>
+            <p class="tester">
+                Organization of industry leaders such as intel and 
+                Microsoft that develop firmware for computers.
+            </p>
+        </div>
+        
+        </section>
+    </div>
+
+    
 
 <!-- 
     <section class="intro">

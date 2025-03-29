@@ -37,7 +37,7 @@ html, body {
 // body or something the accent color and making some else the background
 body {
     font-family: "funnel-sans";
-    line-height: 1.5;
+    line-height: 1.4;
     background-color: $color-background;
     color: $color-text-primary;
     margin-top: $header-height;
@@ -45,20 +45,110 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-primary;
-    margin: 10px;
+    //margin: 10px;
+}
+
+p {
+    font-family: $font-primary;
+    //max-width: 60ch;
+    //font-size: large;
 }
 
 h1 {
+    font-family: $font-accent;
     font-size: 2.5rem;
 }
 
-.section-title {
+h2 {
+    font-family: $font-accent;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: $font-accent;
+    font-size: 1.8rem;
+}
+
+
+
+
+// text-rendering: optimizeLegibility???
+
+.i1 {
+    font-size: calc(2rem + 0.5vw);
+    padding: 0 5px;
+}
+
+.flexbox {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
 
-    h1 {
-        text-decoration: underline;
+.column {
+    flex-direction: column;
+}
+
+.left {
+    justify-content: left;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.text-compact {
+    line-height: 1;
+}
+
+.content {
+    padding: 40px;
+}
+
+.dark {
+    background-color: #302320;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10ch, 60ch));
+    place-content: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 12vw;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+@media (max-width: 1150px) {
+    .grid {
+        grid-template-columns: repeat(1, minmax(10ch, 60ch));
+        justify-content: center;
+        width: 100%;
     }
+}
+
+.card {
+    //background-color: $color-test;
+    // max-width: 60ch;
+    // margin: 0 auto;
+}
+
+.text-important {
+    outline: 2px solid $color-button;
+    font-size: smaller;
+    border-radius: 2em;
+    padding: 0.5em;
+    width: 25%;
+    margin: 1rem auto;
+}
+
+.test {
+    text-align: end;
 }
