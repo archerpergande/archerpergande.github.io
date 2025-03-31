@@ -43,30 +43,24 @@ body {
     margin-top: $header-height;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-primary;
-    //margin: 10px;
-}
-
-p {
-    font-family: $font-primary;
-    //max-width: 60ch;
-    //font-size: large;
+h1, h2, h3 {
+    font-family: $font-accent;
 }
 
 h1 {
-    font-family: $font-accent;
     font-size: 2.5rem;
 }
 
 h2 {
-    font-family: $font-accent;
     font-size: 2rem;
 }
 
 h3 {
-    font-family: $font-accent;
     font-size: 1.8rem;
+}
+
+p {
+    font-family: $font-primary;
 }
 
 
@@ -81,13 +75,24 @@ h3 {
 
 .flexbox {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    //width: 100%;
 }
 
 .column {
     flex-direction: column;
+}
+
+.dynamic {
+    flex-direction: row;
+}
+
+@media (max-width: 1150px) {
+    .dynamic {
+        flex-direction: column;
+    }
 }
 
 .left {
@@ -111,19 +116,23 @@ h3 {
 }
 
 hr {
+    width: 100%;
     margin: 10px 0;
 }
-
 
 .grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(10ch, 60ch));
     place-content: center;
-    justify-content: space-between;
+    //justify-content: space-around;
     text-align: center;
-    gap: 12vw;
+    gap: 10vw;
     margin: 2rem auto;
     width: 90%;
+}
+
+.p-container {
+    max-width: 60ch;
 }
 
 @media (max-width: 1150px) {
@@ -131,6 +140,7 @@ hr {
         grid-template-columns: repeat(1, minmax(10ch, 60ch));
         justify-content: center;
         width: 100%;
+        //gap: 8vw;
     }
 }
 
@@ -149,6 +159,28 @@ hr {
     margin: 1rem auto;
 }
 
-.test {
-    text-align: end;
+
+
+
+
+
+
+
+
+.heading-img {
+    max-width: 2.5rem;
+    margin: 0px 3px;
 }
+
+.heading-grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: min-content;
+}
+
+// img {
+//     object-fit: cover;
+//     width: 100%;
+//     height: 100%;
+// }

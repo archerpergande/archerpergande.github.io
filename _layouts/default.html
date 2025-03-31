@@ -15,39 +15,40 @@
     {% include hero.html %}
 
     <section class="content dark" id="Education">
-        <div class="flexbox column text-compact">
-            <div class="flexbox row">
-                <img src="/assets/img/paw-white.png" width="35">
-                <h1>Education</h1>
-            </div>
-            <p>Clemson University, SC</p>
-        </div>
-        <hr>
 
-        <div class="flexbox">
+        <div class="flexbox dynamic">
+            <div class="flexbox column left">
+                {% include heading.html 
+                    title="Education" 
+                    text="Clemson University, SC" 
+                    img="/assets/img/paw-white.png" 
+                    flex-direction="row-reverse" 
+                    text-align="end" 
+                %}
+                
+                <div class="p-container">
+                    <p>
+                        One of the most prestigious colleges in 
+                        South Carolina, Clemson University is known 
+                        for its academic excellence and strong community.
+                    </p>
+                </div>
+            </div>
+
             <div>
-                <p>
-                    One of the most prestigious colleges in 
-                    South Carolina, Clemson University is known 
-                    for its academic excellence and strong community.
-                </p>
+                <img src="/assets/img/hero-mid.webp" width="100px">
             </div>
-
         </div>
 
     </section>
 
     <section class="content" id="Clubs">
-        <div class="flexbox column">
-            <div class="flexbox row text-compact">
-                <h1>Clubs</h1>
-                <i class="i1 fa-solid fa-graduation-cap"></i>
-            </div>
-
-            <p class="text-compact">and Organizations</p>
-        </div>
-
-        <hr>
+        {% include heading.html 
+            title="Clubs" 
+            text="and Organizations" 
+            icon="fa-solid fa-graduation-cap" 
+            text-align="end" 
+        %}
 
         <div class="grid">
             <div class="card">
