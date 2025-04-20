@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "FunnelSans";
+    src: url("/assets/font/FunnelSans/FunnelSans.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TheSeasons";
+    src: url("/assets/font/TheSeasons-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; // Stop overflow scrolling on mobile
+}
+
+html {
+    scroll-padding-top: $header-height;
+}
+
+body {
+    font-family: $font-primary;
+    line-height: 1.4;
+    background-color: $color-background-dark;
+    color: $color-text-primary;
+    margin-top: $header-height;
+}
+
+h1, h2, h3 {
+    font-family: $font-accent;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+hr {
+    width: 100%;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: $color-text-primary;
+}
+
+.content {
+    padding: $header-height;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.light {
+    background-color: $color-background;
+}
+
+.dark {
+    background-color: $color-background-dark;
+}

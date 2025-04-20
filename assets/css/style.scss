@@ -2,170 +2,128 @@
 ---
 
 @import 'variables.scss';
+@import 'global.scss';
+
 @import 'header.scss';
-@import 'hero.scss';
-@import 'heading.scss';
+@import 'footer.scss';
 
-@font-face {
-    font-family: "FunnelSans";
-    src: url("/assets/font/FunnelSans/FunnelSans.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
+@import 'components/title.scss';
 
-@font-face {
-    font-family: "TheSeasons";
-    src: url("/assets/font/TheSeasons-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
+@import 'content/hero.scss';
+@import 'content/clubs.scss';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    width: 100%;
-    overflow-x: hidden; // Stop overflow scrolling on mobile
-    //height: 100%;
-}
-
-// theres a thing on ios where the color goes over where
-// the black bar is and makes it look weird
-// i think i can fix this by making the
-// body or something the accent color and making some else the background
-body {
-    font-family: "funnel-sans";
-    line-height: 1.4;
-    background-color: $color-background;
-    color: $color-text-primary;
-    margin-top: $header-height;
-}
-
-h1, h2, h3 {
-    font-family: $font-accent;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.8rem;
-}
-
-p {
-    font-family: $font-primary;
-}
-
-
-
-
-// text-rendering: optimizeLegibility???
-
-.i1 {
-    font-size: calc(2rem + 0.5vw);
-    padding: 0 5px;
-}
-
-.flexbox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    //width: 100%;
-}
-
-.column {
-    flex-direction: column;
-}
-
-.dynamic {
-    flex-direction: row;
-}
-
-@media (max-width: 1150px) {
-    .dynamic {
-        flex-direction: column;
-    }
-}
-
-.left {
-    justify-content: left;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.text-compact {
-    line-height: 1;
-}
-
-.content {
-    padding: 40px;
-}
-
-.dark {
-    background-color: #302320;
-}
-
-hr {
-    width: 100%;
-    margin: 10px 0;
-}
-
-.grid {
+.grid-1 {
     display: grid;
-    grid-template-columns: repeat(2, minmax(10ch, 60ch));
-    place-content: center;
-    //justify-content: space-around;
-    text-align: center;
+    //grid-template-columns: repeat(1, minmax(10ch, 60ch));
+    //place-content:;
+    //text-align: center;
     gap: 10vw;
-    margin: 2rem auto;
+    //margin: 2rem auto;
     width: 90%;
 }
 
-.p-container {
-    max-width: 60ch;
+/*
+best thing to do is to create a grid and use polygon
+to makes 2 seperate grids that are triangles.
+from there you can make one cell have the background image
+
+this will also work better for bugs
+*/
+.clemson-library {
+    display: grid;
+    grid-template-columns: 1fr;
+    clip-path: none;
+    
 }
 
-@media (max-width: 1150px) {
-    .grid {
-        grid-template-columns: repeat(1, minmax(10ch, 60ch));
-        justify-content: center;
-        width: 100%;
-        //gap: 8vw;
-    }
+.out {
+    width: 100%;
+    height: 500px;
+    background-color: #302320;
 }
 
-.card {
-    //background-color: $color-test;
-    // max-width: 60ch;
-    // margin: 0 auto;
+.in {
+    width: inherit;
+    height: inherit;
+    background-image: url("/assets/img/clemson-library.webp");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    opacity: 30%;
+    position:absolute;
 }
 
-.text-important {
-    outline: 2px solid $color-button;
-    font-size: smaller;
-    border-radius: 2em;
-    padding: 0.5em;
-    width: 25%;
-    margin: 1rem auto;
+.test-grid {
+    // display: grid;
+    // flex-direction: row;
+    width: 100%;
+    height: 500px;
+    // gap: 0px;
+    //grid-template-rows: 1fr;
 }
 
+.test-left {
+    width: 100%;
+    height: inherit;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    background-color: red;
+    outline: solid 5px black;
+    position: absolute;
+}
 
+.test-box {
+    width: 50%;
+    height: 50%;
+    word-wrap: break-word;
+    outline: solid 5px black;
+}
 
+.test-right {
+    width: 100%;
+    height: inherit;
+    outline: solid 5px black;
+    background-color:blue;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    
+}
 
+// .clemson-library::backdrop {
+//     content: "";
+//     position: absolute;
+//     inset: 0;
+//     background-image: url('/assets/img/clemson-library.webp');
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     clip-path: polygon(0 0, 100% 0, 0 100%);
+//     z-index: 0;
+// }
 
+// .clemson-library > * {
+//     position: relative;
+//     z-index: 1;
+// }
 
+.clemson-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+}
 
+.clemson-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 30%;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
 
 
 // img {

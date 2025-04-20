@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+bundle exec jekyll serve --trace
+-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,108 +16,63 @@
 <body>
 
     {% include header.html %}
-    {% include hero.html %}
+    {% include content/hero.html %}
 
-    <section class="content dark" id="Education">
-
-        <div class="flexbox dynamic">
-            <div class="flexbox column left">
-                {% include heading.html 
-                    title="Education" 
-                    text="Clemson University, SC" 
-                    img="/assets/img/paw-white.png" 
-                    flex-direction="row-reverse" 
-                    text-align="end" 
-                %}
-                
-                <div class="p-container">
-                    <p>
-                        One of the most prestigious colleges in 
-                        South Carolina, Clemson University is known 
-                        for its academic excellence and strong community.
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <img src="/assets/img/hero-mid.webp" width="100px">
+    <!-- <div class="test-grid">
+        <div class="test-left">
+            <div class="test-box">
+                fasfasdfsafsadfsadfsadfsdafdsfsadfasdfasdfsfasdfsd
             </div>
         </div>
+        <div class="test-right">
+            <div class="test-box">
+                dfasdfasdfasdfasdfasdfasdfasdfadsfsdfs
+            </div>
+        </div>
+    </div> -->
 
-    </section>
+    <div class="out">
+        <div class="in"></div>
+        <section class="most-in">
+            hello
+        </section>
+    </div>
 
-    <section class="content" id="Clubs">
-        {% include heading.html 
-            title="Clubs" 
-            text="and Organizations" 
-            icon="fa-solid fa-graduation-cap" 
-            text-align="end" 
-        %}
+    <section class="content dark clemson-library" id="Education">
+        <!-- <div class="clemson-wrapper">
+            <img class="clemson-img" src="/assets/img/clemson-library.webp">
+        </div> -->
 
-        <div class="grid">
-            <div class="card">
-                <h2>ACM</h2>
-                <p>
-                    The Association of Computing and Machinery
-                    aims to support those interested in computers
-                    by providing opportunity for learning, career
-                    development, and professional networking.
-                </p>
-                <div class="flexbox space-between">
-                    <p class="text-important">Networking</p>
-                    <p class="text-important">Learning</p>
-                    <p class="text-important">Community</p>
-                </div>
-            </div>
-            <div class="card">
-                <h2>CUhackit</h2>
-                <p>
-                    A yearly event held at Clemson where students 
-                    team together to design and build new ideas and 
-                    inventions using computers. Events are held in 
-                    partnership with industry leaders such as AWS, 
-                    Nvidia, and more.
-                </p>
-                <div class="flexbox space-between">
-                    <p class="text-important">Teamwork</p>
-                    <p class="text-important">Creativity</p>
-                    <p class="text-important">Workshop</p>
-                </div>
-            </div>
-            <div class="card">
-                <h2>AI Club</h2>
-                <p>
-                    Offers instruction about the fundamentals and 
-                    latest trends of AI and machine learning 
-                    algorithms
-                </p>
-                <div class="flexbox space-between">
-                    <p class="text-important">Technology</p>
-                    <p class="text-important">Innovation</p>
-                    <p class="text-important">Future</p>
-                </div>
-            </div>
-            <div class="card">
-                <h2>UEFI Forum</h2>
-                <p>
-                    Organization tasked with the development of 
-                    computer firmware. Instructional webinars are 
-                    hosted by Intel, AMD, Microsoft, and others.
-                </p>
-                <div class="flexbox space-between">
-                    <p class="text-important">Industry</p>
-                    <p class="text-important">Embedded</p>
-                    <p class="text-important">Career</p>
-                </div>
-            </div>
+        <div class="split-caption wrapper">
+            {% include components/title.html 
+                title="Education" 
+                text="Clemson University, SC" 
+                img="/assets/img/paw-white.png" 
+                flex-direction="row-reverse" 
+                text-align="end" 
+            %}
+            <p>
+                One of the most prestigious colleges in 
+                South Carolina, Clemson University is known 
+                for its academic excellence and strong community.
+            </p>
+        </div>
+
+        <!-- <div class="split-img-container clemson-wrapper">
+            <img class="clemson-img" src="/assets/img/clemson-library.webp">
+        </div> -->
+
+        <div>
+            <h2>Academic tstsasf</h2>
         </div>
 
 
     </section>
 
+    {% include content/clubs.html %}
 
 
-    <p>and Organizations</p>
+    <!-- <p>and Organizations</p>
 
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
@@ -121,10 +80,10 @@
     <h4>Heading 4</h4>
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
-    <p>Paragraph</p>
+    <p>Paragraph</p> -->
 
 
-    <section class="club-grid dark">
+    <section class="club-grid light">
         <div>
             <h2>Clemson ACM Student Chapter</h2>
             <p>Organization aimed to support those interested in computers 
@@ -147,7 +106,7 @@
         </div>
     </section>
 
-    <div class="content">
+    <div class="content light">
         <section>
     
         

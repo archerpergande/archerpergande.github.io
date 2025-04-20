@@ -1,13 +1,12 @@
-<div class="heading-grid text-compact">
+<div class="title">
     <div class="flexbox" style="flex-direction: {{ include.flex-direction }};">
         <h1>{{ include.title }}</h1>
 
         {% if include.icon %}
-            <i class="i1 {{ include.icon }}"></i>
+            <i class="{{ include.icon }}"></i>
         {% elsif include.img %}
-            <img class="heading-img" src="{{ include.img }}">
+            <img src="{{ include.img }}">
         {% endif %}
-
     </div>
 
     <p style="text-align: {{ include.text-align }};">{{ include.text }}</p>
