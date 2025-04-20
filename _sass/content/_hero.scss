@@ -49,8 +49,20 @@
     font-size: 1.5rem;
 }
 
-.hero i:hover {
-    transform: scale(1.5);
+.hero i {
+    transition: transform 0.2s ease;
+}
+
+@media (hover: hover) {
+    .hero i:hover {
+        transform: scale(1.5);
+    }
+}
+
+@media (hover: none) {
+    .hero i:active {
+        transform: scale(1.5);
+    }
 }
 
 .hero .button {
