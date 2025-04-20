@@ -53,18 +53,6 @@
     transition: transform 0.2s ease;
 }
 
-@media (hover: hover) {
-    .hero i:hover {
-        transform: scale(1.5);
-    }
-}
-
-@media (hover: none) {
-    .hero i:active {
-        transform: scale(0.95);
-    }
-}
-
 .hero .button {
     display: inline-block;
     position: absolute;
@@ -79,6 +67,13 @@
 
     &:hover {
         background-color: $color-highlight;
+    }
+}
+
+// add hover effect for devices that support it (mostly destop)
+@media (hover: hover) {
+    .hero i:hover {
+        transform: scale(1.5);
     }
 }
 
