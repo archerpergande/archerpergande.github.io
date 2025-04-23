@@ -1,3 +1,59 @@
+.edu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    //height: 50vh;
+    position: relative;
+    z-index: 1;
+}
+
+.edu::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/assets/img/clemson-library.webp');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    opacity: 18%;
+    z-index: -1;
+    //clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+// .edu .test {
+//     position: relative;
+//     z-index: 1;
+// }
+
+// .edu .test::before {
+//     content: "";
+//     position: absolute;
+//     inset: 0;
+//     background-image: url('/assets/img/clemson-library.webp');
+//     background-size: cover;
+//     background-position: top;
+//     background-repeat: no-repeat;
+//     opacity: 18%;
+//     z-index: -1;
+//     //clip-path: polygon(0 0, 100% 0, 0 100%);
+// }
+
+
+.edu .container {
+    //text-align: end;
+    align-self: end;
+    max-height: 50%;
+}
+
+.edu .container2 {
+    align-items: start;
+    text-align: start;
+    max-height: 50%;
+}
+
+.edu ul {
+    //list-style-position: inside;
+    padding-left: 1.5rem;
+}
 
 .grid-1 {
     display: grid;
