@@ -1,9 +1,21 @@
+/*
+best way i can see is make edu a flex
+and have the two children one being the
+image container and the other text
+
+make the image container flex-grow 2
+so it takes up more of the screen or
+something?
+*/
+
+
 .edu {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 1;
+    height: 50vh;
 }
 
 .edu::before {
@@ -12,11 +24,10 @@
     inset: 0;
     background-image: url('/assets/img/clemson-library.webp');
     background-size: cover;
-    background-position: top;
     background-repeat: no-repeat;
+    background-position: top;
     opacity: 18%;
     z-index: -1;
-    //clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
 // .edu .test {
