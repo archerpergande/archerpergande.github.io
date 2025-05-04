@@ -12,6 +12,13 @@
     flex-direction: column;
 }
 
+// Necessary container for rendering on mobile devices
+.hero .img-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 .hero img {
     padding: $pad-large;
     object-position: 50% 25%;
