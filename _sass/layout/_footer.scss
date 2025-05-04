@@ -1,0 +1,17 @@
+footer {
+    background-color: inherit;
+    width: 100%;
+    text-align: center;
+}
+
+footer a p {
+    padding: 0 0.5rem;
+
+    /*
+    On mobile this will keep the link underlined
+    until something else is clicked
+    */
+    &:hover {
+        text-decoration: underline;
+    }
+}

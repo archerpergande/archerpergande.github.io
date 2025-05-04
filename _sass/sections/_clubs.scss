@@ -1,0 +1,38 @@
+.clubs {
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.clubs .container {
+    @include flex-center;
+}
+
+.clubs .grid-2 {
+    grid-template-columns: repeat(2, minmax(10ch, 60ch));
+    gap: 10vw;
+    margin: 2rem auto;
+    max-width: 90%;
+
+    @include respond(1150px) {
+        grid-template-columns: repeat(1, minmax(10ch, 60ch));
+    }
+}
+
+// .clubs .buzzword {
+//     outline: 2px solid $color-interactive;
+//     font-size: smaller;
+//     border-radius: 2em;
+//     padding: 0.5em;
+//     width: 25%;
+//     margin: 1rem auto;
+// }
+
+.clubs .tag {
+    color: $color-text-primary;
+    //font-size: smaller;
+    outline: 2px solid $color-interactive;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    margin: 1rem auto;
+}

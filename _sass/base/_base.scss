@@ -1,0 +1,60 @@
+/* _base.scss
+    Contains very basic styling to be used across
+    the whole website
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html, body {
+	width: 100%;
+}
+
+
+html {
+	scroll-padding-top: $header-height;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+	line-height: 1.4;
+	color: $color-text-primary;
+	background-color: $color-background;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid $color-text-primary;
+	width: 100%;
+	margin: 0.75rem 0;
+}
+
+.img-full {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pad {
+	padding: $pad;
+}
+
+.pad-large {
+	padding: $pad-large;
+}
+
+.i-large {
+	font-size: 1.5rem;
+}
+
+.c-primary {
+	background-color: $color-primary;
+}
+
+.c-secondary {
+	background-color: $color-secondary;
+}

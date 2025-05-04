@@ -1,0 +1,21 @@
+<section class="edu c-secondary" id="edu">
+    <div class="bg-image pad-large">
+        <div>
+            {% include components/title.html 
+                title="Education"
+                img="/assets/img/paw-white.png" 
+                text="Clemson University, SC" %}
+            <hr>
+            <p>{{ site.data.edu.description }}</p>
+        </div>
+    </div>
+
+    <div class="grid-2 grid-center pad-large">
+        {% for item in site.data.edu.content %}
+            <div class="box">
+                <h2>{{ item.title }}</h2>
+                <p>{{ item.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</section>

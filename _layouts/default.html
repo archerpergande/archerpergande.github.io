@@ -1,26 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <!--
 bundle exec jekyll serve --trace
 -->
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:wght@400;700&display=swap">
+    
     <script src="https://kit.fontawesome.com/884c20470a.js" crossorigin="anonymous"></script>
-    <title>{{ page.title }}</title>
+    
+    <title>{{ site.title }}</title>
 </head>
 
 <body>
 
-    {% include header.html %}
-    {% include content/hero.html %}
-    {% include content/edu.html %}
-    {% include content/clubs.html %}
-    {% include content/projects.html %}
-    {% include footer.html %}
+    {% include layout/header.html %}
+    {% include sections/hero.html %}
+    {% include sections/edu.html %}
+    {% include sections/clubs.html %}
+    {% include sections/projects.html %}
+    {% include layout/footer.html %}
 
 </body>
 

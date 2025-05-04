@@ -1,5 +1,5 @@
-<div class="title" style="justify-content: {{ include.justify }}">
-    <div class="flexbox" style="flex-direction: {{ include.flex-direction }};">
+<div class="title">
+    <div class="container">
         <h1>{{ include.title }}</h1>
 
         {% if include.icon %}
@@ -9,5 +9,5 @@
         {% endif %}
     </div>
 
-    <p style="text-align: {{ include.text-align }};">{{ include.text }}</p>
+    <p>{{ include.text }}</p>
 </div>

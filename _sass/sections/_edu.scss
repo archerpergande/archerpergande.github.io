@@ -1,0 +1,26 @@
+.edu {
+    text-align: center;
+}
+
+.edu .box {
+    max-width: 60ch;
+    align-self: self-start;
+}
+
+.edu .bg-image {
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+
+    width: 100%;
+    height: clamp(300px, 50vh, 600px);
+
+    background-size: cover;
+    background-repeat: none;
+    background-position: top;
+    background-image:
+        linear-gradient(
+            rgba(30, 30, 30, 0.75),
+            rgba(30, 30, 30, 0.75)),
+            url("/assets/img/clemson-library.webp");
+}

@@ -1,0 +1,40 @@
+- title: ACM
+  description: >
+    The Association of Computing and Machinery aims
+    to support those interesed in computers by providing
+    opportunity for learning, career development, and
+    professional networking.
+  tags:
+    - item: Networking
+    - item: Learning
+    - item: Community
+  
+- title: CUhackit
+  description: >
+    A yearly event held at Clemson where students team
+    together to design and build new ideas and inventions
+    using computers. Events are held in partnership with
+    industry leaders such as AWS, Nvidia, and more.
+  tags:
+    - item: Teamwork
+    - item: Creativity
+    - item: Workshop
+  
+- title: AI Club
+  description: >
+    Offers instruction about the fundamentals and latest
+    trends of AI and machine learning algorithms
+  tags:
+    - item: Technology
+    - item: Innovation
+    - item: Future
+
+- title: UEFI Forum
+  description: >
+    Organization tasked with the development of computer
+    firmware. Instructional webinars are hosted by
+    Intel, AMD, Microsoft, and others.
+  tags:
+    - item: Industry
+    - item: Embedded
+    - item: Career

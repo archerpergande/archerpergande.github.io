@@ -1,0 +1,49 @@
+/* _mixins.scss
+    Defines structures for commonly used code
+*/
+
+/*
+Simple centered flexbox
+*/
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+Only activates if the device has a mouse
+*/
+@mixin hover-supported {
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+/*
+Only activates if the device is touchscreen
+*/
+@mixin hover-unsupported {
+    @media (hover: none) and (pointer: coarse) {
+        &:active {
+            @content;
+        }
+    }
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == mobile {
+        @media (max-width: $mobile) { @content; }
+    }
+    @else if $breakpoint == tablet {
+        @media (max-width: $tablet) { @content; }
+    }
+    @else if $breakpoint == computer {
+        @media (max-width: $computer) { @content; }
+    }
+    @else {
+        @media(max-width: $breakpoint) { @content; }
+    }
+}

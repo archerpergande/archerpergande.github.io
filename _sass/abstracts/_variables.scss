@@ -1,0 +1,38 @@
+/* _variables.scss
+    Defines global variables for website
+*/
+
+/* 
+Fonts
+*/
+
+$font-family-primary: 'Noto Sans';
+$font-family-accent: 'Lora';
+
+/*
+Colors
+*/
+
+$color-background: hsl(25, 12%, 10%);
+$color-primary: hsl(25, 12%, 20%);
+$color-secondary: hsl(25, 12%, 15%);
+
+$color-interactive: hsl(25, 33%, 43%);
+$color-active: hsl(25, 33%, 52%);
+
+$color-text-primary: hsl(30, 43%, 92%);
+$color-text-secondary: hsl(32, 15%, 74%);
+
+/*
+Sizings
+*/
+
+$mobile: 480px;
+$tablet: 768px;
+$computer: 1024px;
+
+$header-height: 2.5rem;
+$max-height: calc(100vh - #{$header-height});
+
+$pad: 1.5rem;
+$pad-large: 2.5rem;

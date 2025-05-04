@@ -1,0 +1,54 @@
+/* _grid.scss
+    Defines the layout of grids
+*/
+
+// Dynamic grid layout
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+// Split grid layout
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: $mobile) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+// Centers the grid
+.grid-center {
+    justify-items: center;
+    align-items: center;
+}
+
+// Changes the width of elements in the grid
+.span-1 {
+    grid-column: span 1;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.span-3 {
+    grid-column: span 3;
+}
+
+.span-4 {
+    grid-column: span 4;
+}
+
+.span-5 {
+    grid-column: span 5;
+}
+
+.span-6 {
+    grid-column: span 6;
+}

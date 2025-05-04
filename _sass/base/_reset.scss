@@ -1,0 +1,65 @@
+/* _reset.scss
+    Reset HTML elements across different browsers
+*/
+
+// Remove margin and padding from all elements
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Stop left and right overflow scrolling on mobile
+body {
+    overflow-x: hidden;
+}
+
+// Stop font inflation on mobile
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+// Remove default margins
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+// Set base body
+body {
+    font-family: $font-family-primary;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+// Make sure these dont exceed size of parent
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+// Set word wrapping
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+// Remove ugly decorations on lists and links
+a {
+    font-family: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+// Inherit fonts for elements that normally dont
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}

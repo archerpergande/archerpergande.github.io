@@ -1,0 +1,9 @@
+.nav-center {
+    @include flex-center;
+    text-align: center;
+}
+
+.nav-center a {
+    @include flex-center;
+    padding: 0 1.5rem;
+}
