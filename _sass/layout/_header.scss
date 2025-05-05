@@ -23,5 +23,6 @@ header a {
 
     @include hover-unsupported {
         color: $color-text-secondary;
+        font-size: small;
     }
 }
