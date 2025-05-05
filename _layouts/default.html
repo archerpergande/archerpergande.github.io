@@ -21,10 +21,14 @@ bundle exec jekyll serve --trace
 <body>
 
     {% include layout/header.html %}
-    {% include sections/hero.html %}
-    {% include sections/edu.html %}
-    {% include sections/clubs.html %}
-    {% include sections/projects.html %}
+
+    <div class="page-wrapper">
+        {% include sections/hero.html %}
+        {% include sections/edu.html %}
+        {% include sections/clubs.html %}
+        {% include sections/projects.html %}
+    </div>
+
     {% include layout/footer.html %}
 
 </body>

@@ -33,6 +33,11 @@ hr {
 	margin: 0.75rem 0;
 }
 
+.page-wrapper {
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
 .img-full {
 	width: 100%;
     height: 100%;
