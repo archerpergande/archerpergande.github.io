@@ -12,7 +12,7 @@
 }
 
 // Stop left and right overflow scrolling on mobile
-body {
+html, body {
     overflow-x: hidden;
 }
 
