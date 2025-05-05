@@ -20,4 +20,8 @@ header a {
     @include hover-supported {
         background-color: $color-active;
     }
+
+    @include hover-unsupported {
+        color: $color-text-secondary;
+    }
 }
