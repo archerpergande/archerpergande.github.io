@@ -16,6 +16,7 @@ header a {
     @include flex-center;
     height: 100%;
     font-size: 1.1rem;
+    transition: color 0.3s ease;
 
     @include hover-supported {
         background-color: $color-active;
@@ -23,6 +24,5 @@ header a {
 
     @include hover-unsupported {
         color: $color-text-secondary;
-        font-size: small;
     }
 }
