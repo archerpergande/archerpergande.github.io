@@ -1,0 +1,31 @@
+.projects {
+    text-align: center;
+}
+
+.projects .content {
+    max-width: 700px;
+    aspect-ratio: 16 / 9;
+}
+
+.projects iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    padding: 0.5rem;
+}
+
+.projects a {
+    text-decoration: underline;
+}
+
+// .projects .card {
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+//     transition: 1s;
+//     //width: 300px;
+//     border-radius: 5px;
+//     //background-color: $color-primary;
+
+//     @include hover-supported {
+//         transform: translateY(-3px);
+//         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+//     }
+// }

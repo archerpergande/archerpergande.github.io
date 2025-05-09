@@ -1,3 +1,7 @@
-title: Projects
-description: >
-  Work in progress. Check back later!
+- title: BmpView
+  video: https://www.youtube.com/embed/txKM7doz0LU
+  link: https://github.com/archerpergande/BmpView
+  description: >
+    An image viewer written from scratch in C that runs in the
+    absense of any operating system. This program can be directly
+    run from the BIOS of any computer that supports UEFI firmware.

@@ -1,4 +1,19 @@
-<section class="pad-large c-secondary" id="projects">
-    <h1>{{ site.data.projects.title }}</h1>
-    <p>{{ site.data.projects.description }}</p>
+<section class="projects pad-large c-secondary" id="projects">
+    {% include components/title.html 
+        title="Projects" 
+        text="and Collaborations" 
+        icon="fa-solid fa-wrench" 
+    %}
+    <hr>
+
+    <div class="grid grid-center">
+        {% for project in site.data.projects %}
+            <div class="content">
+                <a href="{{ project.link }}"><h2>{{ project.title }}</h2></a>
+                <p>{{ project.description }}</p>
+                <iframe src="{{ project.video }}"></iframe>
+            </div>
+        {% endfor %}
+    </div>
+
 </section>
