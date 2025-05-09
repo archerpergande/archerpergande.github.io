@@ -4,6 +4,10 @@
 
 .projects .content {
     max-width: 700px;
+
+    @include respond($mobile) {
+        max-width: 300px;
+    }
 }
 
 .projects iframe {
@@ -14,6 +18,10 @@
 
 .projects a {
     text-decoration: underline;
+
+    @include hover-supported {
+        color: $color-text-secondary;
+    }
 }
 
 // .projects .card {
