@@ -54,8 +54,9 @@
         display: none;
     }
 
+    // this is the only way i can think of to render the caption
+    // text correctly when the image is not visible
     .hero .grid-2 {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
+        display: flex;
     }
 }
