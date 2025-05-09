@@ -11,7 +11,9 @@
             <div class="content">
                 <a href="{{ project.link }}"><h2>{{ project.title }}</h2></a>
                 <p>{{ project.description }}</p>
-                <iframe src="{{ project.video }}"></iframe>
+                <div class="overflow-container">
+                    <iframe src="{{ project.video }}"></iframe>
+                </div>
             </div>
         {% endfor %}
     </div>
