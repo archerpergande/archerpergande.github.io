@@ -32,7 +32,7 @@ $tablet: 768px;
 $computer: 1024px;
 
 $header-height: 2.5rem;
-$max-height: calc(100vh - #{$header-height});
+$max-height: calc(100dvh - #{$header-height});
 
 $pad: 1.5rem;
 $pad-large: 2.5rem;
