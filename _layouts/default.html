@@ -9,22 +9,72 @@ bundle exec jekyll serve --trace
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:wght@400;700&display=swap">
-    
-    <script src="https://kit.fontawesome.com/884c20470a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">    
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 
     <title>{{ site.title }}</title>
 </head>
 
 <body>
-    {% include layout/header.html %}
-    {% include sections/hero.html %}
-    {% include sections/edu.html %}
-    {% include sections/clubs.html %}
-    {% include sections/projects.html %}
-    {% include layout/footer.html %}
-</body>
 
+    {% include layout/header.html %}
+
+    <!--Hero-->
+    <div class="container-fluid position-relative p-0">
+        <!--Image large-->
+        <div class="hero-img-wrapper d-none d-sm-block" style="max-height: 75vh; aspect-ratio: 4 / 3;">
+            <img class="object-fit-cover w-100 h-100" style="object-position: 50% 25%;" src="/assets/img/portrait.jpg">
+        </div>
+
+        <!--Image small-->
+        <div class="hero-img-wrapper d-sm-none">
+            <img class="object-fit-cover w-100 h-100" src="/assets/img/portrait-mobile.jpg">
+        </div>
+
+        <!--Overlay text-->
+        <div class="hero-overlay-wrapper translate-middle text-center">
+            <img class="img-fluid w-100" src="/assets/img/logo-xl-white.png">
+        </div>
+    
+    </div>
+    
+    <!--About-->
+    <div class="container mt-5 px-5">
+        <h1 class="text-center">About Me</h1>
+        <p>
+            I'm studying at Clemson University for a Bachelor's in
+            Computer Science. I love helping others and work part time
+            as a teaching assistant on campus. When I am not in class,
+            you can find me biking down the spanish moss trail or hanging
+            out by the nearest beach!
+        </p>
+        <p>
+            Technical skills of mine include C, Python, Html, and Css. I also
+            know some basic servicing for laptops and pc's.
+        </p>
+    </div>
+
+    <!--Posts-->
+    <div class="container mt-5 px-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            {% for post in site.data.posts %}
+                <div class="col">
+                    <div class="card shadow rounded-4 h-100">
+                        <img class="card-img-top w-100 h-100 object-fit-cover" src="/assets/img/posts/{{ post.image }}">
+                        <div class="card-body">
+                            <small class="card-text text-body-secondary">{{ post.date }}</small>
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.desc }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% include layout/footer.html %}
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -1,0 +1,35 @@
+.hero-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to right,rgba(0, 0, 0, 0.65) 0%, rgba(255, 255, 255, 0) 65%);
+
+        // mobile change gradient to bottom
+        @media (max-width: 576px) {
+            background: linear-gradient(to top,rgba(0, 0, 0, 0.65) 0%, rgba(255, 255, 255, 0) 65%);
+        }
+    }
+}
+
+.hero-overlay-wrapper {
+    position: absolute;
+
+    // laptop / tablet
+    @media (min-width: 576px) {
+        top: 50%;
+        left: 27%;
+        width: 40%;
+        max-width: 550px;
+    }
+
+    // mobile
+    @media (max-width: 576px) {
+        top: 80%;
+        left: 50%;
+    }
+}

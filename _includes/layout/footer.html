@@ -1,21 +1,20 @@
-<footer class="pad">
-    <nav class="nav-center">
-        <a href="mailto:{{ site.email }}">
-            <i class="i-large fa-solid fa-envelope"></i>
-            <p>Email</p>
-        </a>
+<footer class="container-fluid bg-primary text-light p-3 mt-5">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="mailto:{{ site.email }}"><img class="nav-icon" src="/assets/img/icon/envelope-fill-white.svg"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ site.github }}"><img class="nav-icon" src="/assets/img/icon/github-mark-white.svg"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ site.linkedin }}"><img class="nav-icon" src="/assets/img/icon/linkedin-white.svg"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ site.instagram }}"><img class="nav-icon" src="/assets/img/icon/instagram-white.svg"></a>
+        </li>
+    </ul>
 
-        <a href="{{ site.github }}">
-            <i class="i-large fa-brands fa-square-github"></i>
-            <p>Github</p>
-        </a>
-
-        <a href="{{ site.linkedin }}">
-            <i class="i-large fa-brands fa-linkedin"></i>
-            <p>LinkedIn</p>
-        </a>
-    </nav>
-    
-    <hr>
-    <p>Copyright &copy; 2025 Archer Pergande. All rights reserved.</p>
+    <div class="container text-center mt-2">
+        <p>&copy; Archer Pergande, All rights reserved.</p>
+    </div>
 </footer>

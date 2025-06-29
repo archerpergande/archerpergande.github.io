@@ -1,0 +1,20 @@
+.btn-light {
+    background-color: transparent;
+    color: white;
+
+    &:hover {
+        background-color: $secondary;
+        border-color: $secondary;
+        color: white;
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    border: $primary;
+}
+
+.btn-secondary {
+    background-color: $secondary;
+    border: $secondary;
+}

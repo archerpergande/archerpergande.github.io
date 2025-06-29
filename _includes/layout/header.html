@@ -1,8 +1,24 @@
-<header>
-    <nav class="nav-center">
-        <a href="#edu">Education</a>
-        <a href="#clubs">Clubs</a>
-        <a href="#projects">Projects</a>
-        <a href="{{ site.resume }}" target="_blank" rel="noopener noreffer">Resume</a>
-    </nav>
-</header>
+<!--Navigation Bar-->
+<nav class="container-fluid navbar navbar-expand-md bg-primary text-light px-3 sticky-top">
+
+    <!--Brand-->
+    <a class="navbar-brand" href="#">
+        <img src="/assets/img/logo-white.png" style="height: 54px;">
+    </a>
+
+    <!--Dropdown toggle-->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--Links-->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            {% for nav in site.data.nav %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ nav.link }}">{{ nav.text }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
