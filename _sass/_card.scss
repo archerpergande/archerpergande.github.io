@@ -1,0 +1,14 @@
+.card-link {
+    transition: transform 0.5s ease;
+    &:hover {
+        transform: scale(1.01);
+    }
+
+    &:hover img {
+        filter: brightness(70%);
+    }
+}
+
+.card-link img {
+    transition: filter 0.5s ease;
+}
