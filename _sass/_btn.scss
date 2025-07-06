@@ -1,20 +1,33 @@
 .btn-light {
-    background-color: transparent;
-    color: white;
+    background-color: transparent !important;
+    color: white !important;
 
     &:hover {
-        background-color: $secondary;
-        border-color: $secondary;
-        color: white;
+        background-color: $secondary !important;
+        border-color: $secondary !important;
+        color: white !important;
     }
 }
 
 .btn-primary {
-    background-color: $primary;
-    border: $primary;
+    background-color: $primary !important;
+    border: 1px solid $primary !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease !important;
+
+    &:hover {
+        background-color: darken($primary, 10%) !important;
+        border-color: darken($primary, 10%) !important;
+    }
 }
 
 .btn-secondary {
-    background-color: $secondary;
-    border: $secondary;
+    color: black !important;
+    background-color: $secondary !important;
+    border: 1px solid $secondary !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease !important;
+
+    &:hover {
+        background-color: darken($secondary, 10%) !important;
+        border-color: darken($secondary, 10%) !important;
+    }
 }

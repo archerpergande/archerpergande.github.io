@@ -1,10 +1,15 @@
-$primary: #072e15 !important;
-$secondary: #20c45c !important;
+$primary: #072e15;
+$secondary: #20c45c;
+$tertiary: #f0f0f0;
 
 .bg-primary {
-    background-color: $primary;
+    background-color: $primary !important;
 }
 
 .bg-secondary {
-    background-color: $secondary
+    background-color: $secondary !important;
+}
+
+.bg-tertiary {
+    background-color: $tertiary !important;
 }

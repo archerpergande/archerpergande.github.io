@@ -1,0 +1,98 @@
+---
+layout: default
+title: Contact
+---
+
+<!--Links-->
+<div class="container mt-5">
+    <!--Heading-->
+    <div class="text-center">
+        <h1>Lets chat!</h1>
+        <p>
+            I would love to hear about your project or business 
+            opportunity that relates to software development;
+            or just how your day has been.
+        </p>
+    </div>
+
+    <!--Grid-->
+    <div class="container-fluid w-100 mt-5">
+        <div class="row text-center justify-content-center g-5">
+            <!--Email-->
+            <div class="col-12 col-md-4">
+                <a class="btn bg-tertiary rounded-5 p-3" href="mailto:{{ site.email }}">
+                    <img class="nav-icon" src="/assets/img/icon/envelope-fill.svg">
+                </a>
+
+                <div class="mt-2">
+                    <h5 class="mb-0">
+                        Send an email:
+                    </h5>
+                    <a class="d-block" href="mailto:{{ site.email }}">
+                        {{ site.email }}
+                    </a>
+                    <a class="d-block" href="mailto:{{ site.email-personal }}">
+                        {{ site.email-personal }}
+                    </a>
+                </div>
+            </div>
+
+            <!--Phone-->
+            <div class="col-12 col-md-4">
+                <a class="btn bg-tertiary rounded-5 p-3" href="tel:{{ site.phone }}">
+                    <img class="nav-icon" src="/assets/img/icon/telephone-fill.svg">
+                </a>
+
+                <div class="mt-2">
+                    <h5 class="m-0">
+                        Call or voicemail:
+                    </h5>
+                    <a class="d-block" href="tel:{{ site.phone }}">
+                        {{ site.phone-text }}
+                    </a>
+                </div>
+            </div>
+
+            <!--Social-->
+            <div class="col-12 col-md-4">
+                <a class="btn bg-tertiary rounded-5 p-3" href="{{ site.linkedin }}">
+                    <img class="nav-icon" src="/assets/img/icon/people-fill.svg">
+                </a>
+                
+                <div class="mt-2">
+                    <h5 class="m-0">
+                        Leave a dm:
+                    </h5>
+                    <a class="d-block" href="{{ site.linkedin }}">
+                        Linkedin
+                    </a>
+                    <a class="d-block" href="{{ site.instagram }}">
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Form-->
+<div class="container text-center mt-5">
+    <h1 class="mb-3">Or drop a message below.</h1>
+    <p>I'll write back to you within 24 hours!</p>
+
+    <!--formsubmit.co-->
+    <form action="https://formsubmit.co/74f51d7d00c32efb7fdeadbc6a4d296d" method="POST">
+        <input class="form-control mb-3" type="text" name="name" placeholder="Your name" required>
+        <input class="form-control mb-3" type="email" name="email" placeholder="Your email" required>
+        <textarea class="form-control mb-3" name="message" placeholder="Your message" required style="min-height: 300px;"></textarea>
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_autoresponse" value="Archer Pergande: Thank you for reaching out! I will get back to you shortly.">
+    </form>
+
+    <p class="text-center mt-3">Don't know if I am the right match? Ask about my resume!</p>
+    
+</div>
