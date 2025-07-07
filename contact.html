@@ -79,18 +79,19 @@ title: Contact
 <div class="container text-center mt-5">
     <h1 class="mb-3">Or drop a message below.</h1>
     <p>I'll write back to you within 24 hours!</p>
-    <p class="text-danger">(Note: formsubmit.co may be down during late hours.)</p>
+    <p class="text-danger">
+        Note: Forms are handled by a third party and
+        message security is not guaranteed.
+    </p>
 
     <!--formsubmit.co-->
-    <form action="https://formsubmit.co/74f51d7d00c32efb7fdeadbc6a4d296d" method="POST">
+    <form action="https://formspree.io/f/xovwoaqr" method="POST">
         <input class="form-control mb-3" type="text" name="name" placeholder="Your name" required>
         <input class="form-control mb-3" type="email" name="email" placeholder="Your email" required>
-        <textarea class="form-control mb-3" name="message" placeholder="Your message" required style="min-height: 300px;"></textarea>
+        <textarea class="form-control mb-3" name="message" placeholder="Your message" style="min-height: 300px;" required></textarea>
         <button class="btn btn-primary" type="submit">Submit</button>
 
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="_honey" style="display:none">
-        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_gotcha" style="display:none">
     </form>
 
     <p class="text-center mt-3">Don't know if I am the right match? Ask about my resume!</p>
