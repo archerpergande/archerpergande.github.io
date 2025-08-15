@@ -1,0 +1,27 @@
+---
+layout: default
+title: Portfolio
+---
+
+<div class="container d-flex flex-column justify-content-center px-5">
+    <!--Page header-->
+    <div class="mt-5 text-center">
+        <h1>What I have been up to...</h1>
+        <hr>
+    </div>
+
+    <!--Project-->
+    {% for project in site.data.projects %}
+        <div class="mt-4">
+            <!--Heading-->
+            <a class="text-dark text-decoration-none" href="{{ site.github }}/{{ project.git-partial }}">
+                <h2 class="d-inline-block">{{ project.title }}</h2>
+                <img class="nav-icon mx-1" style="vertical-align: baseline;" src="/assets/img/icon/github-mark.svg">
+            </a>
+            
+            <!--Description + media-->
+            <p>{{ project.desc }}</p>
+            <iframe class="youtube w-100" src="https://www.youtube.com/embed/{{ project.vid-id }}"></iframe>
+        </div>
+    {% endfor %}
+</div>

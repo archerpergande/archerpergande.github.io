@@ -1,0 +1,15 @@
+- project:
+  title: CSS Solar System
+  git-partial: CSS-SolarSystem
+  vid-id: 1Q96HO3KBm0
+  desc: >
+    A replica of the solar system written in html, css,
+    and a small amount of javascript
+
+- project:
+  title: BmpView
+  git-partial: BmpView
+  vid-id: txKM7doz0LU
+  desc: >
+    Image viewer written in C for the UEFI platform (computer firmware).
+    Supports bitmap images (bmp files).

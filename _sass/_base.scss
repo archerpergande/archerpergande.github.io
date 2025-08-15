@@ -2,6 +2,26 @@ $primary: #072e15;
 $secondary: #20c45c;
 $tertiary: #f0f0f0;
 
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+
+html {
+    background-color: $primary;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
 .bg-primary {
     background-color: $primary !important;
 }

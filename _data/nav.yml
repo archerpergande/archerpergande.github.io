@@ -3,5 +3,9 @@
   text: Contact
 
 - nav:
+  link: 'projects'
+  text: 'Projects'
+
+- nav:
   link: 'ta'
-  text: TA
+  text: 'TA'
